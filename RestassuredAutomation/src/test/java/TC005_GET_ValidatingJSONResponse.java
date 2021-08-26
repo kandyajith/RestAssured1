@@ -1,3 +1,6 @@
+import org.junit.Assert;
+import org.junit.Test;
+
 import com.sun.net.httpserver.Headers;
 
 import io.restassured.RestAssured;
@@ -24,7 +27,7 @@ public class TC005_GET_ValidatingJSONResponse
 		  String responseBody=response.getBody().asString();
 		  System.out.println("Response Body is:" +responseBody);
 		  
-		  Assert.asserEquals(responseBody.contains("Delhi"),ture);
+		  Assert.assertEquals(responseBody.contains("Delhi"),true);
 	}
 
 
