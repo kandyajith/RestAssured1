@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TC002_POST_Request">
+      <class name="datadriventesting.DDT_AddMultiNewEmployees">
         <methods>
-          <include name="RegistrationSuccessful"/>
+          <include name="postNewEmployees" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- TC002_POST_Request -->
+      </class> <!-- datadriventesting.DDT_AddMultiNewEmployees -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
